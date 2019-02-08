@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <title>Flexbox</title>
+    <style>
+        .clearfix{
+            overflow: auto;
+        }
+        .header{
+            word-wrap: normal;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: relative;
+            width: 80%
+        }
+        div h2{
+            justify-content: center;
+            background-color: burlywood
+        }
+        .sidebar{
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: coral;
+            float: right;
+            height: auto;
+            overflow: auto;
+        }
+        
+        @media screen and (max-width: 700px){
+            .sidebar{
+                width: auto;
+                height: auto;
+                float: left;
+                
+            }
+            .topnav ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            .topnav li{
+                float: left;
+        }
+            .topnav li a{
+                display: block;
+                  
+                  text-align: center;
+                  padding: 16px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div style="background-color: aquamarine" id="top">
+            <header>
+                <h1>Baccano</h1>
+                <ul class="topnav">
+                    <nav >
+                        <li><a href="#Rolling">Rolling Bootlegs</a></li>
+                        <li><a href="#Pussyfoot">The Flying Pussyfoot</a></li>
+                        <li><a href="#Drug">Drug and Dominoes</a></li>
+                    </nav>
+                </ul>
+            </header>
+        </div>
+        
+            <div class="sidebar">
+            <ol>
+                <li>Baccano! The Rolling Bootlegs</li>
+                <li>Baccano! 1931 The Grand Punk Railroad (Local Episode)</li>
+                <li>Baccano! 1931 The Grand Punk Railroad (Express Episode)</li>
+                <li>Baccano! 1932 Drug & The Dominos</li>
+            </ol>
+        </div>
+        <div class="container">
+            
+            <h2 id="Rolling">Rolling Bootlegs</h2>
+            <p>The story stars Firo Prochainezo, a rising member of the Martillo camorra family. Through a chance encounter with a mysterious young woman, he and several other characters are pulled into a plot involving a group of alchemists in a centuries-old conflict over the fabled elixir of life.</p>
+            <h2 id="Pussyfoot">The Flying Pussyfoot</h2>
+            <p>In 1931, disaster befalls the famed Flying Pussyfoot transcontinental train as it makes its journey from Chicago to New York. A terrorist/cult group known as the Lemures seek to use the train's passengers, including a US Senator's wife and daughter, as leverage to demand the release of their leader, Huey Laforet. Meanwhile, a gang of killers led by the Russo family assassin Ladd Russo are trying to hold the train hostage to demand ransom from the train company. Caught in the middle is a group of delinquents originally attempting a train heist, who take it upon themselves to save the passengers. And amidst all this, a terrifying blood-red "monster" called the Rail Tracer has begun to murder people all over the train...</p>
+            <h2 id="Drug">Drug and Dominoes</h2>
+            <p>1932 deals with Eve Genoard, searching for her older brother Dallas following his disappearance after the events of the 1930 story. She soon becomes entangled in the rivalry between the Runorata and Gandor families, both of which also have an interest in her brother.</p>
+            
+            
+        </div>
+        
+        <footer style="background-color: cadetblue">
+            <cite>All book summarys are from <a href="https://tvtropes.org/pmwiki/pmwiki.php/LightNovel/Baccano"> tvtropes</a></cite>
+            <nav>
+                <a href="#top">Top</a>
+            </nav>
+        </footer>
+    </body>
+</html>
